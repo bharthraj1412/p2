@@ -1,0 +1,3 @@
+[submodule "sharenetearn"]
+	path = sharenetearn
+	url = https://github.com/bharthraj1412/p2.git
