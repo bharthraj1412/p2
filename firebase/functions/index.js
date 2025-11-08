@@ -3,13 +3,8 @@ import * as admin from "firebase-admin";
 import cors from "cors";
 admin.initializeApp();
 const db = admin.firestore();
-const commissionsModule = require('./commissions');
-const paymentsModule = require('./payments');
 
 // Export all functions
-exports.calculateCommissions = commissionsModule.calculateCommissions;
-exports.initiateUPIPayment = paymentsModule.initiateUPIPayment;
-exports.confirmUPIPayment = paymentsModule.confirmUPIPayment;
 
 const COMMISSION_STRUCTURE = [
   { level: 0, percentage: 0.15 }, // Direct 15%
